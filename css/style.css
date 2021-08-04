@@ -1,0 +1,74 @@
+/* 
+All the pages
+ */
+
+body {
+    background-image: url("../img/background.png");
+}
+
+.table {
+    background-color: white;
+}
+
+
+/* 
+index page 
+*/
+
+#grid_system {
+    padding: 50px;
+    text-align: center;
+}
+
+.imgBox {
+    width: 400px;
+}
+
+.imgPic {
+    width: 400px;
+    height: 250px;
+}
+
+.lead {
+    color: white;
+}
+
+
+/* 
+Registration pages 
+*/
+
+#registration {
+    width: 550px;
+    background-image: url("../img/registrationBackground.jpg");
+}
+
+
+/* 
+Timetable Pages 
+*/
+
+.table-bordered {
+    vertical-align: middle !important;
+    background-color: yellow;
+}
+
+
+/* 
+My account page 
+*/
+
+.unavailablePage {
+    width: 900px;
+    background-image: url("../img/registrationBackground.jpg");
+}
+
+
+/* 
+unitManagementAllocate page 
+*/
+
+.editContent {
+    width: 120px;
+    text-align: center;
+}
