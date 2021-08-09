@@ -1,6 +1,6 @@
 # CourseManagementSystem
 This project is a websit project which is implemented in PHP. It has implemented all the functions of a real Course Management System.
-The file "localhost.sql" is my database, before uploading the website to server, you should import the file into your database.
+The file "localhost.sql" is my database, before uploading the website to server, you should import the file into your database. If you want to run this software on your personal device, you need to change the database setting to your xampp's setting.
 
 Disadvantages of this website:
 It cannot show the consultation timetable (although UC and DC can allocate the consultation time), it cannot allocate a UC and DC, and so on.
