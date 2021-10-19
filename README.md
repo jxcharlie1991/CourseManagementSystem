@@ -15,7 +15,7 @@ Start the Apache and MySQL on XAMPP Contol Panel.
 This project's database is default running on localhost, please set the password on [db_conn](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/component/db_conn.php).
 
 ### 4. Transfer data
-Then transfer the [Database Data](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/localhost.sql) into the database.
+Firstly, create a new database MUST be called "chail" (if you don't like the name, you need to modify the [db_conn](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/component/db_conn.php)), then import the [Database Data](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/localhost.sql) into the database.
 
 ### 5. Open the website
 If you copied the whole directory into htdocs, please input the address http://localhost/CourseManagementSystem-main into address bar. If you only copied the files and sub-directories into htdocs, please only input the address http://localhost into address bar.
