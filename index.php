@@ -46,7 +46,7 @@ session_start();
     
     <!--footer design-->
     <nav class="navbar fixed-bottom justify-content-center bg-light">       
-            <span class="text-muted">This website is made by Li Chai, student ID 501741.</span>        
+            <span class="text-muted">This website is coded by Li Chai.</span>        
     </nav>
 
 
