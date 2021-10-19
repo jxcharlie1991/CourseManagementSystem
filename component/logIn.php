@@ -9,11 +9,11 @@ $queryCheckStaff = "SELECT * FROM assignmentstaff WHERE staff_id='$id'";
 $rowStudent = ($mysqli->query($queryCheckStudent))->fetch_array(MYSQLI_ASSOC);
 $rowStaff = ($mysqli->query($queryCheckStaff))->fetch_array(MYSQLI_ASSOC);
 
-if (!isset($rowStudent["student_id"]) || (($rowStudent["student_id"] != $id) && ($rowStaff["staff_id"] != $id)) || $id == "") {
+if ((($rowStudent["student_id"] != $id) && ($rowStaff["staff_id"] != $id)) || $id == "") {
     $mysqli->close();
     echo "<script>alert('Please check your student ID or Staff ID!');location.href='" . $_SERVER["HTTP_REFERER"] . "';</script>";
-} else if(!isset($rowStudent["student_id"]) || $rowStudent["student_id"]==$id){
-    if ( hash_equals($rowStudent['password'],crypt($password,$rowStudent['password']))) {
+} else if($rowStudent["student_id"]==$id){
+    if (hash_equals($rowStudent['password'],crypt($password,$rowStudent['password']))) {
         $_SESSION["user"]["name"] = $rowStudent["name"];
         $_SESSION["user"]["level"] = "student";
         $_SESSION["user"]["id"]=$rowStudent["student_id"];
