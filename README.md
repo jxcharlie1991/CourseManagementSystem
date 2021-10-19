@@ -21,7 +21,50 @@ Firstly, create a new database MUST be called "chail" (if you don't like the nam
 If you copied the whole directory into htdocs, please input the address http://localhost/CourseManagementSystem-main into address bar. If you only copied the files and sub-directories into htdocs, please only input the address http://localhost into address bar.
 
 ## Test
-This project is designed according to the Research below. Please feel free to explore and test all the pages.
+This project is designed according to the [Research](#research) below. Please feel free to use the users below to explore and test all the pages.
+
+### Student User Account
+```
+Name           Student id         Password
+Liam           100001             Aa12345@            
+Noah           100002             Aa12345@
+William        100003             Aa12345@
+James          100004             Aa12345@
+Oliver         100005             Aa12345@
+Benjamin       100006             Aa12345@             
+Elijah         100007             Aa12345@
+Lucas          100008             Aa12345@
+Mason          100009             Aa12345@
+Logan          100010             Aa12345@
+Emma           100011             Aa12345@
+Olivia         100012             Aa12345@
+Ava            100013             Aa12345@
+Isabella       100014             Aa12345@
+Sophia         100015             Aa12345@
+Charlotte      100016             Aa12345@
+Mia            100017             Aa12345@
+Amelia         100018             Aa12345@
+Harper         100019             Aa12345@
+Evelyn         100020             Aa12345@
+```
+
+### Staff User Account
+```
+Staff id      Name                      Password      Identity
+202001        Kai Chiu Wong             Ac2333!       DC
+202002        Riseul Ryu                Ac2333!       UC
+202003        Mutaz Barika              Ac2333!       UC
+202004        Dominic Duke              Ac2333!       UC
+202005        John                      Ac2333!       Staff or Lecturer or Tutor
+202006        Robert                    Ac2333!       Staff or Lecturer or Tutor
+202007        Michael                   Ac2333!       Staff or Lecturer or Tutor
+202008        William                   Ac2333!       Staff or Lecturer or Tutor
+202009        David                     Ac2333!       Staff or Lecturer or Tutor
+202010        Richard                   Ac2333!       Staff or Lecturer or Tutor
+202011        Joseph                    Ac2333!       Staff or Lecturer or Tutor
+202012        Thomas                    Ac2333!       Staff or Lecturer or Tutor
+202013        Charles                   Ac2333!       Staff or Lecturer or Tutor
+```
 
 ### Research
 
