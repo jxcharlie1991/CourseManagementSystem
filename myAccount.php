@@ -220,7 +220,7 @@ include("./component/db_conn.php");
                                 </th>
                                 <?php
                                 for ($j = 0; $j < 5; $j++) {
-                                    if (!$arrayTutorial[$i][$j]) {
+                                    if (!isset($arrayTutorial[$i][$j]) || !$arrayTutorial[$i][$j]) {
                                 ?>
                                         <td>
                                         </td>

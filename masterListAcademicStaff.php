@@ -69,7 +69,7 @@ if (!$_SESSION["user"] || $_SESSION["user"]["id"] == "") {
                             <td><?php echo $staffRow["email"]; ?></td>
 
                             <?php
-                            if ($availableRow["unavailable_start_date"] == "" || $availableRow["unavailable_start_date"] == "0000-00-00") {
+                            if (!isset($availableRow["unavailable_start_date"]) || $availableRow["unavailable_start_date"] == "" || $availableRow["unavailable_start_date"] == "0000-00-00") {
                             ?>
                                 <td>Available</td>
                                 <td>Available</td>

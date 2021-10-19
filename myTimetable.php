@@ -118,7 +118,7 @@ else if($_SESSION['user']["level"]!="student"){
                             </th>
                             <?php
                             for ($j = 0; $j < 5; $j++) {
-                                if (!$arrayTutorial[$i][$j]) {
+                                if (!isset($arrayTutorial[$i][$j]) || !$arrayTutorial[$i][$j]) {
                             ?>
                                     <td>
                                     </td>

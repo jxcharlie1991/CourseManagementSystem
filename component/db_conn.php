@@ -1,6 +1,6 @@
 <?php
 //connect database
-$mysqli = new mysqli('localhost', 'chail', '501741', 'chail'); 
+$mysqli = new mysqli('localhost', 'root', '', 'chail'); 
 //check connection
 if (mysqli_connect_errno())  
 { 
