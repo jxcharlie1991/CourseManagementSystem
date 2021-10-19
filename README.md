@@ -1,25 +1,19 @@
 # CourseManagementSystem
-## Application Overview
-This project is a websit project which is implemented in PHP. It has implemented all the functions of a real Course Management System. The file "localhost.sql" is my database, before uploading the website to server, you should import the file into your database. If you want to run this software on your personal device, you need to change the database setting to your xampp's setting.
+## Description
+The University of DoWell in Wonderland (UDW) has started to build a Course Management System including a new tutorial allocation system. To increase the efficiency and the effectiveness of the enrolment process, the University has decided to develop a website where the students, tutors and lecturers can use.
+
+
 ### [See Code](https://github.com/jxcharlie1991/CourseManagementSystem)
 
 ## Application Introduction Video
 
-[![](https://i.ytimg.com/an_webp/UQv0bn9mlc4/mqdefault_6s.webp?du=3000&sqp=CPKy-ooG&rs=AOn4CLD-fp9_4N5NINQb2-gWmdOxIv1wpA)](https://youtu.be/UQv0bn9mlc4)
+[![](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/img/Thumbnail1.png)](https://youtu.be/UQv0bn9mlc4)
 
-[Click for the whole video](https://youtu.be/UQv0bn9mlc4)
+### [Click for the whole video](https://youtu.be/UQv0bn9mlc4)
 
-[![](https://i.ytimg.com/an_webp/5GnwWwFSCss/mqdefault_6s.webp?du=3000&sqp=CP-w-ooG&rs=AOn4CLC0ivA5l4CxBaE_JG5AhsFufYm4Rg)](https://youtu.be/5GnwWwFSCss)
+[![](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/img/Thumbnail2.png)](https://youtu.be/5GnwWwFSCss)
 
-[Click for the whole video](https://youtu.be/5GnwWwFSCss)
-## SQL data
-
-[SQL data](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/localhost.sql)
-
-## Self Evaluation
-Disadvantages of this website: It cannot show the consultation timetable (although UC and DC can allocate the consultation time), it cannot allocate a UC and DC, and so on. Another shortage is that I was not a programmer before, so I do not know the preference that other programmers have. For example, I just use words “enrolled”, “enrol”, “choose” and “success” on the button, because I don’t know what should be written on the button. Another problem is the choice of Synchronou and Asynchronous, almost every page need to communicate with database, so there is a choice of Synchronou and Asynchronous. In this project, I prefer to display my my skills and logic, so I use Asynchronous more than Synchronou.
-
-Note: Please follow the rule when set IDs, it must be 6 numbers, unit code uses three letters and three numbers, because I didn’t limit the inputs in php, there are already too many limits in the website. All the accounts have allocated levels, lecturers or tutors, if you want to text the access level, you need to undo allocate in Master List Allocation, or register a new account. In addition, I used bootstrap, jquery, ajax, jquery tabledit, bootstrap icons in the website, and I use several Internet pictures in the website, and other codes are all my own work.
+### [Click for the whole video](https://youtu.be/5GnwWwFSCss)
 
 ## Details
 UDW has three different campuses:
@@ -67,3 +61,21 @@ Lecturer                   • Can view the student list of the corresponding un
 Tutor                      • Can view the student list of the corresponding tutorial
 Student                    • Can enrol unit and tutorial
 ```
+
+## Research
+
+A Course Management System (CMS) usually allows the University to manage unit enrolment, and tutorial allocation. A CMS usually provides the following functions:
+- The management of units
+- Tutorial allocation management 
+- Student management
+- Academic staff information
+
+### Home Page
+**Access: all**
+
+The login/logout section include authentication of a user (i.e. database access is required)
+### Registration page
+**Access: all**
+
+The registration page will need to store the registration data (i.e. database access is required).
+When the registration data is stored to the database, password encryption is required. The crypt() function and using salt are expected for encryption.
