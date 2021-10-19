@@ -1,68 +1,29 @@
 # CourseManagementSystem
 ## Description
-The University of DoWell in Wonderland (UDW) has started to build a Course Management System including a new tutorial allocation system. To increase the efficiency and the effectiveness of the enrolment process, the University has decided to develop a website where the students, tutors and lecturers can use.
+The Course Management System is a new tutorial allocation system, and designed for students, tutors and lecturers.
 
+## Running
+This project is a websit project which is implemented in PHP, and it is has been tested both on Sever and in XAMPP. Please download the repository and use XAMPP to run it.
 
-### [See Code](https://github.com/jxcharlie1991/CourseManagementSystem)
+### 1. Transfer the whole directory into XAMPP
+Copy and paste the CourseManagementSystem folder into XAMPP's htdocs folder.
 
-## Application Introduction Video
+### 2. Start Apache and MySQL
+Start the Apache and MySQL on XAMPP Contol Panel.
 
-[![](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/img/Thumbnail1.png)](https://youtu.be/UQv0bn9mlc4)
+### 3. Make sure database is correctly set
+This project's database is default running on localhost, please set the password on [db_conn](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/component/db_conn.php).
 
-### [Click for the whole video](https://youtu.be/UQv0bn9mlc4)
+### 4. Transfer data
+Then transfer the [Database Data](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/localhost.sql) into the database.
 
-[![](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/img/Thumbnail2.png)](https://youtu.be/5GnwWwFSCss)
+### 5. Open the website
+If you copied the whole directory into htdocs, please input the address http://localhost/CourseManagementSystem into address bar. If you only copied the files and sub-directories into htdocs, please only input the address http://localhost into address bar.
 
-### [Click for the whole video](https://youtu.be/5GnwWwFSCss)
+## Test
+This project is designed according to the Research below. Please feel free to explore and test all the pages.
 
-## Details
-UDW has three different campuses:
-* Pandora
-* Rivendell
-* Neverland
-
-UDW offers four study periods:
-* Semester 1
-* Semester 2
-* Winter School
-* Spring School
-
-The site serves as a comprehensive portal with information on timetables, unit details, academic staff and functions such as tutorial allocation and unit enrolment. 
-
-Students, teaching team of Unit Coordinator (UC), Lecturers, and Tutors as well as the Degree Coordinator (DC) are the main users. 
-
-There will be two Master lists: Academic Staff and Units. 
-
-Master list of academic staff contains the list of the UC, lecturers and tutors. Master list of Units contains the list of units offered by the UDW. The degree coordinator may manage both master lists of academic staff and units.
-
-Each UC will be responsible for selecting tutors from the “Master List of Academic staff”. This will be included in the Unit details. (i.e., the list of tutors of each unit)
-
-Each unit will have at least 2 academic staff (numbers are determined by DC), one of whom will be assigned to be the UC by the DC. Lecturers and tutors can be rostered to work at any unit, but there can be only one lecturer at each campus for each unit at a time. 
-
-To use the CMS, staff and students must first register by providing Student/Staff ID, Name, E-mail address, and password for mandatory information. Address, Date of Birth, and Phone number are optional. 
-
-Each class has a maximum capacity of students in the class. If a class is full, students cannot enrol into it. They instead must choose another available class. For example, if the capacity of tutorial is a maximum of 20 people, then students cannot join that tutorial once the tutorial is full. Also, different labs have different capacities which will be applied when students are allocated.
-
-## Role Description
-```
-Role                       Description
-Degree Coordinator (DC)    • Will decide
-                               *  what units will be available at each semester; and
-                               *  who will be teaching for each unit
-                           • Will responsible for 
-                               * giving access level to casual staff (assignment 2)
-Unit Coordinator (UC)      • Will decide
-                               * who will be a lecturer for the unit for each campus; 
-                               * the lecture time; and
-                               * the tutorial times
-                           • Can add or remove tutor/students
-Lecturer                   • Can view the student list of the corresponding unit
-                           • Can add or remove tutor/students
-Tutor                      • Can view the student list of the corresponding tutorial
-Student                    • Can enrol unit and tutorial
-```
-
-## Research
+### Research
 
 A Course Management System (CMS) usually allows the University to manage unit enrolment, and tutorial allocation. A CMS usually provides the following functions:
 - The management of units
@@ -79,3 +40,54 @@ The login/logout section include authentication of a user (i.e. database access 
 
 The registration page will need to store the registration data (i.e. database access is required).
 When the registration data is stored to the database, password encryption is required. The crypt() function and using salt are expected for encryption.
+### Master List Page - academic staff
+**Access: DC**
+
+For the master list page for academic staff will need to modify the list of academic staff that will be available for selection of the lecturer and allocate tutors into the tutorial time. (i.e. database access is required). 
+
+The degree coordinator can 
+- View the academic staff unavailability
+- Add or remove academic staff
+- Allocate academic staff to be lecturer
+- Allocate tutor to a unit
+### Master List Page - Unit
+**Access: DC**
+
+In this page, the DC can add, remove or edit the units for the course including the offering semesters, campuses and its description. 
+### Unit Detail Page – Unit Description Page
+**Access: all**
+
+In this page, the descriptions of the unit are displayed with basic information including the corresponding unit coordinator, the offering semesters and the offering campus.
+### Unit Enrolment Page
+**Access: student**
+
+It will display available units for each student to enrol. In this page, students can enrol themselves into the unit and change their enrolment. The unit enrolment page needs to store a submitted unit enrolment request and update user account as required (i.e. database access IS required).
+### Individual Timetable page
+**Access: individual student**
+
+It will display the student's timetable (including lectures and tutorials) that a user has enrolled in. If a student has not enrolled any unit, it will display empty timetable.
+### User Account Page
+**Access: all**
+
+For assignment 2 the user account page needs to retrieve and update a user’s account details as required (i.e. database access IS required). User also can change their password, mobile number or e-mail address, etc.
+
+Here a user can view their class timetable with the units they have enrolled in. Usuability must be considered.
+
+The academic staff can
+- Add, remove or update their unavailability 
+### Unit Management / allocating teaching staff
+**Access: DC, Unit Coordinator**
+
+Here the UC can add or remove and consultation and tutorial time /location for the unit. The UC also allocates the lecturer for the unit (UC can be the lecturer or can allocate other staff members as a lecturer) and the tutor in the corresponding tutorial. Tutorial time must start on the hour or half-hour. i.e. a tutorial can start at 9:00, 9:30, 10:00, 10:30, or so on.
+### Tutorial Allocation Page
+**Access: student**
+
+Student choose his preferred tutorial time for each enrolled unit.
+The user must enrol themselves in the unit through unit enrolment page to allocate them into the tutorial. It will not allow a user to enrol a tutorial that exceeds the maximum capacity. 
+
+The tutorial allocation page needs to store a submitted tutorial allocation request and update a user’s account as required (i.e. database access is required)
+### Enrolled Student Details Page
+**Access: DC, UC, lecturer, tutor**
+
+This page is only available for the DC, UC, lecturer and tutor (Students cannot access to this page), and the list of students and their allocated tutorial time details are placed. Only the current student in 
+each class will be visible. 
