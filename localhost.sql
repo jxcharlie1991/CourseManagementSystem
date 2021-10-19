@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2021-07-15 23:01:47
--- 服务器版本： 5.5.68-MariaDB
+-- Generation Time: Oct 19, 2021 at 11:50 PM
+-- Server version: 5.5.68-MariaDB
 -- PHP Version: 7.2.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentavailable`
+-- Table structure for table `assignmentavailable`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentavailable` (
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `assignmentavailable` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentavailable`
+-- Dumping data for table `assignmentavailable`
 --
 
 INSERT INTO `assignmentavailable` (`staff_id`, `unavailable_start_date`, `unavailable_end_date`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `assignmentavailable` (`staff_id`, `unavailable_start_date`, `unavai
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentconsultation`
+-- Table structure for table `assignmentconsultation`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentconsultation` (
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `assignmentconsultation` (
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentconsultation`
+-- Dumping data for table `assignmentconsultation`
 --
 
 INSERT INTO `assignmentconsultation` (`consultation_id`, `unit_code`, `start_week`, `start_time`, `duration`, `location`) VALUES
@@ -69,7 +69,7 @@ INSERT INTO `assignmentconsultation` (`consultation_id`, `unit_code`, `start_wee
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentenrolment`
+-- Table structure for table `assignmentenrolment`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentenrolment` (
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `assignmentenrolment` (
 ) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentenrolment`
+-- Dumping data for table `assignmentenrolment`
 --
 
 INSERT INTO `assignmentenrolment` (`enrol_id`, `student_id`, `unit_code`, `timetable_id`) VALUES
@@ -120,7 +120,7 @@ INSERT INTO `assignmentenrolment` (`enrol_id`, `student_id`, `unit_code`, `timet
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentimetable`
+-- Table structure for table `assignmentimetable`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentimetable` (
@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `assignmentimetable` (
 ) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentimetable`
+-- Dumping data for table `assignmentimetable`
 --
 
 INSERT INTO `assignmentimetable` (`timetable_id`, `unit_code`, `tutor_id`, `tutor`, `start_week`, `start_time`, `duration`, `location`, `max_student`) VALUES
@@ -164,7 +164,7 @@ INSERT INTO `assignmentimetable` (`timetable_id`, `unit_code`, `tutor_id`, `tuto
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentstaff`
+-- Table structure for table `assignmentstaff`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentstaff` (
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `assignmentstaff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentstaff`
+-- Dumping data for table `assignmentstaff`
 --
 
 INSERT INTO `assignmentstaff` (`staff_id`, `password`, `name`, `email`, `qualification`, `expertise`, `phone`, `level`, `lecturer`) VALUES
@@ -201,7 +201,7 @@ INSERT INTO `assignmentstaff` (`staff_id`, `password`, `name`, `email`, `qualifi
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentstudent`
+-- Table structure for table `assignmentstudent`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentstudent` (
@@ -215,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `assignmentstudent` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentstudent`
+-- Dumping data for table `assignmentstudent`
 --
 
 INSERT INTO `assignmentstudent` (`student_id`, `password`, `name`, `email`, `address`, `birth`, `phone`) VALUES
@@ -245,7 +245,7 @@ INSERT INTO `assignmentstudent` (`student_id`, `password`, `name`, `email`, `add
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentunit`
+-- Table structure for table `assignmentunit`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentunit` (
@@ -265,7 +265,7 @@ CREATE TABLE IF NOT EXISTS `assignmentunit` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentunit`
+-- Dumping data for table `assignmentunit`
 --
 
 INSERT INTO `assignmentunit` (`id`, `unit_code`, `unit_name`, `uc_id`, `unit_coordinator`, `lecturer_id`, `lecturer`, `start_week`, `start_time`, `duration`, `semester`, `campus`, `description`) VALUES
@@ -278,7 +278,7 @@ INSERT INTO `assignmentunit` (`id`, `unit_code`, `unit_name`, `uc_id`, `unit_coo
 -- --------------------------------------------------------
 
 --
--- 表的结构 `assignmentutor`
+-- Table structure for table `assignmentutor`
 --
 
 CREATE TABLE IF NOT EXISTS `assignmentutor` (
@@ -288,7 +288,7 @@ CREATE TABLE IF NOT EXISTS `assignmentutor` (
 ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `assignmentutor`
+-- Dumping data for table `assignmentutor`
 --
 
 INSERT INTO `assignmentutor` (`id`, `staff_id`, `unit_code`) VALUES
@@ -346,7 +346,7 @@ INSERT INTO `assignmentutor` (`id`, `staff_id`, `unit_code`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `login`
+-- Table structure for table `login`
 --
 
 CREATE TABLE IF NOT EXISTS `login` (
@@ -355,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `login`
+-- Dumping data for table `login`
 --
 
 INSERT INTO `login` (`username`, `password`) VALUES
@@ -371,7 +371,7 @@ INSERT INTO `login` (`username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `movies`
+-- Table structure for table `movies`
 --
 
 CREATE TABLE IF NOT EXISTS `movies` (
@@ -384,7 +384,7 @@ CREATE TABLE IF NOT EXISTS `movies` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `movies`
+-- Dumping data for table `movies`
 --
 
 INSERT INTO `movies` (`ID`, `title`, `year`, `language`, `rate`, `genre`) VALUES
@@ -401,7 +401,7 @@ INSERT INTO `movies` (`ID`, `title`, `year`, `language`, `rate`, `genre`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `units`
+-- Table structure for table `units`
 --
 
 CREATE TABLE IF NOT EXISTS `units` (
@@ -413,7 +413,7 @@ CREATE TABLE IF NOT EXISTS `units` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `units`
+-- Dumping data for table `units`
 --
 
 INSERT INTO `units` (`id`, `unit_code`, `unit_name`, `lecturer`, `semester`) VALUES
@@ -426,7 +426,7 @@ INSERT INTO `units` (`id`, `unit_code`, `unit_name`, `lecturer`, `semester`) VAL
 -- --------------------------------------------------------
 
 --
--- 表的结构 `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -439,7 +439,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`ID`, `username`, `password`, `mobile`, `email`, `gender`) VALUES
