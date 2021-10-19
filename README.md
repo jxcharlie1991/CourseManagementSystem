@@ -18,7 +18,7 @@ This project's database is default running on localhost, please set the password
 Then transfer the [Database Data](https://github.com/jxcharlie1991/CourseManagementSystem/blob/main/localhost.sql) into the database.
 
 ### 5. Open the website
-If you copied the whole directory into htdocs, please input the address http://localhost/CourseManagementSystem into address bar. If you only copied the files and sub-directories into htdocs, please only input the address http://localhost into address bar.
+If you copied the whole directory into htdocs, please input the address http://localhost/CourseManagementSystem-main into address bar. If you only copied the files and sub-directories into htdocs, please only input the address http://localhost into address bar.
 
 ## Test
 This project is designed according to the Research below. Please feel free to explore and test all the pages.
